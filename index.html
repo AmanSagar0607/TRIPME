@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" rel="stylesheet"
+        type="text/css">
+    <!-- j query -->
+    <!-- <link rel="stylesheet" href="css/nivo-slider.css" media="screen">
+    <link rel="stylesheet" href="css/futurico-theme.css" media="screen"> -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- box icon cdn -->
+    <!-- <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script> -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+<!-- preloader -->
+
+<div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
+<!-- loader ends -->
+
+
+
+
+
+
+
+    <!-- Side navbar -->
+    <div class="sidebar">
+        <div class="navigation_bar">
+            <ul class="nav_list">
+                <div class="logo-container">
+                    <!-- <div class="logo">
+                        <span class="logo">
+                            <ion-icon name="pin"></ion-icon>
+                        </span>
+                        <span class="logo-title">MYTRIP</span>
+                    </div> -->
+                    <div class="toggle">
+                        <ion-icon name="arrow-dropdown" class="open"></ion-icon>
+                        <ion-icon name="arrow-dropleft" class="close"></ion-icon>
+                    </div>
+                </div>
+                <!-- <li class="list">
+                    <span class="icon"><ion-icon name="search"></ion-icon></span>
+                        <input type="text" placeholder="search" name="search" id="search">
+                     <span class="link-name">Home</span> 
+                </li> -->
+                <li class="list active">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home"></ion-icon>
+                        </span>
+                        <span class="menu-title">Home</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-hotel"></i>
+                        </span>
+                        <span class="menu-title">Hotels</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="airplane"></ion-icon>
+                        </span>
+                        <span class="menu-title">Flights</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="train"></ion-icon>
+                        </span>
+                        <span class="menu-title">Trains</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="car"></ion-icon>
+                        </span>
+                        <span class="menu-title">Cabs</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-house-user"></i>
+                        </span>
+                        <span class="menu-title">Home Stay</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </span>
+                        <span class="menu-title">Favourite</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+                <li class="list">
+                    <!-- <b></b>
+                    <b></b> -->
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                        </span>
+                        <span class="menu-title">Nortification</span>
+                    </a>
+                    <!-- <span class="link-name">Home</span> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Side navbar  ends-->
+
+    <!-- home-container -->
+    <div class="homecontainer">
+
+
+        <!-- navbar -->
+        <div class="top-nav ">
+            <nav class="navbar navbar-expand-lg  navbar-dark text-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand ml-2 mr-1" href="#"><span class="icon">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        </span>
+                        <span class="menu-title"> TRIPME</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                            <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#destiny">DESTINY</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#services">SERVICES</a>
+              </li>
+                            <li class="nav-item dropdown mt-2">
+                               <!-- Button trigger modal -->
+<a type="button" class=" text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    BOOKING FORM
+  </a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+<!-- form -->
+<div class="container">
+    <h3 class="form-title mb-4 text-dark">Booking Form</h3>
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-12">
+      <label for="validationCustom01" class="form-label"><h5 class="text-dark">First Name</h5></label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustom02" class="form-label"><h5 class="text-dark">Last Name</h5></label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustomUsername" class="form-label"><h5 class="text-dark">Email</h5></label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="email" class="form-control" id="validationCustomemail" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a valid Email.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustom04" class="form-label"><h5 class="text-dark">From</h5></label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option><h5>Delhi</h5></option>
+          <option>Mumbai</option>
+          <option>hyderabad</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid City.
+        </div>
+      </div>
+    <div class="col-md-4">
+      <label for="validationCustom04" class="form-label"><h5 class="text-dark">To</h5></label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>kanpur</option>
+          <option>Bhopal</option>
+          <option>Indore</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a City.
+      </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustom04" class="form-label"><h5 class="text-dark">Person</h5></label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          <option>Small-GroUp</option>
+            <option>Family</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select persons.
+        </div>
+      </div>
+    <!-- <div class="col-12">
+      <div class="form-check text-secondary">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div> -->
+    <div class="col-12">
+      <button class="btn btn-submit  mb-2" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-submit" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-submit">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mt-2 text-white" href="login-Signup.html">LOGIN / SIGN UP</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search Your Destiny"
+                                aria-label="Search" />
+                            <button class="btn bg-white active " type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar ends -->
+
+        <!-- main-container -->
+
+
+
+
+        <div class="home-image-slider">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-image: url(/images/img-dubai.jpg);;">
+               <div class="container">
+                 <h2>DUBAI</h2>
+                 <p>Visit Now</p>
+               </div>
+              </div>
+              <div class="carousel-item" style="background-image: url(/images/img-newyork.jpg);">
+                <div class="container">
+                  <h2>NEWYORK</h2>
+                  <p>Visit Now</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="background-image: url(/images/img-london.jpg);">
+                <div class="container">
+                  <h2>LONDON</h2>
+                  <p>Visit Now</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+
+
+        <!--home Card-->
+        <div class="main-container">
+
+            <div class="container-fluid grid-container">
+                <div class="row ">
+
+                    <!-- <div class="col-lg-12">
+
+                        <div class="carousel-item active">
+                            <div class="video-container">
+                                <video src="/videos/beach.mp4" muted autoplay></video>
+                                <div class="carousel-caption caption-1">
+                                    <div class="main-text">
+                                        <h3 class="up">Live as it</h3>
+                                        <h2>THE PARADISE</h2>
+                                        <h3 class="down">Is on earth</h3>
+                                        <div class="btn btn-outline-none">Find a Trip</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+
+
+
+
+
+
+                    <!-- <div class="video-home">
+                            <video src="/videos/dubai.mp4" width="100%" height="100%" muted autoplay  aria-autocomplete="both"></video>
+                            <div class="video-caption caption">
+                               <h3>Live as it</h3>
+                               <h1>THE paradise</h1>
+                               <h3>is on earth</h3>
+                                <h1>
+                                    <div>R</div>
+                                    <div>O</div>
+                                    <div>M</div>
+                                    <div>E</div>
+                                </h1>  
+                               <div class="btn bg-white text-dark">FIND A TRIP</div>
+                            </div>
+                        </div>  -->
+                    <!-- <p>123</p> -->
+                    <!-- <video src="/videos/travel.mp4" width="100%" muted autoplay></video> -->
+                    <!-- <img src="/images/pexels-michael-block-3225528.jpg" width="100%" alt=""> -->
+
+                    <!-- crousel slider -->
+                    <!-- <div class="slider-container">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-gray"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <video src="/videos/dubai.mp4" width="100%" height="100%" muted
+                                            autoplay></video>
+                                        <div class="carousel-caption caption-1">
+                                            <h1>DUBAI</h1>
+                                            <!-- <h1>
+                                                <div>R</div>
+                                                <div>O</div>
+                                                <div>M</div>
+                                                <div>E</div>
+                                            </h1> 
+                                            <p>
+                                                Visit Seven Monuments
+                                            <!-- </p> 
+                                        </div>
+                                    </div> 
+                                    <div class="carousel-item">
+                                        <video src="/videos/london.mp4" width="100%" height="100%" muted
+                                            autoplay></video>
+                                        <div class="carousel-caption caption-2">
+                                            <h1>LONDON</h1> 
+                                            <h1>
+                                                <div>J</div>
+                                                <div>A</div>
+                                                <div>P</div>
+                                                <div>A</div>
+                                                <div>N</div>
+                                            </h1> 
+                                            <p>
+                                                Visit Seven Monuments
+                                            </p> -->
+                    <!-- </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video src="/videos/beach.mp4" width="100%" height="100%" muted
+                                            autoplay></video>
+                                        <div class="carousel-caption caption-3">
+                                            <h1>MIAMI</h1> -->
+                    <!-- <h1>
+                                                <div>P</div>
+                                                <div>A</div>
+                                                <div>R</div>
+                                                <div>I</div>
+                                                <div>S</div>
+                                            </h1> 
+                                            <p>
+                                                Visit Seven Monuments
+                                            </p> -->
+                    <!-- </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div> -->
+                    <!-- crousel slider ends -->
+
+
+
+
+
+
+
+
+                    <div class="col-lg-12">
+
+                        <div class="row ">
+                            <!-- first-column -->
+                            <div class="col-lg-9">
+                                <div class="right-container">
+                                    <div class="home_card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <!-- card-search -->
+                                                <div class="search-top-container">
+                                                    <div class="location">
+                                                        <span style="color: white; font-size: 25px;">
+                                                            <ion-icon name="pin"></ion-icon>
+                                                        </span>
+                                                        <span
+                                                            style="color: white; margin-left: -5px; font-size: 20px">Masoori</span>
+                                                    </div>
+                                                    <!-- check in checkout -->
+                                                    <div class="check-in-out"></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-12 col-sm-5 ">
+                                                            <div class="check_in">
+                                                                <span style="color: white; font-size: 20px;">
+                                                                    <ion-icon name="calendar"></ion-icon>
+                                                                </span>
+                                                                <span>
+                                                                    <div class="check_in">
+                                                                        <input type="input" class="form__field"
+                                                                            placeholder="Check-in" autocomplete="off"
+                                                                            name="name" id='name' required />
+                                                                        <!-- <label for="name" class="form__label">Name</label> -->
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-12 col-sm-5">
+                                                            <div class="check_out">
+                                                                <span style="color: white; font-size: 20px;">
+                                                                    <ion-icon name="calendar"></ion-icon>
+                                                                </span>
+                                                                <span>
+                                                                    <div class="check_out">
+                                                                        <input type="input" class="form__field"
+                                                                            placeholder="Check-out" name="name"
+                                                                            autocomplete="off" id='name' required />
+                                                                        <!-- <label for="name" class="form__label">Name</label> -->
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2 col-12 col-sm-2">
+                                                            <div class="search-top-container-right ">
+                                                                <!-- <input type="search" name="search" id=""> -->
+                                                                <divc class=" btn search-icon">
+                                                                    <span style=" font-size: 20px;">
+                                                                        <ion-icon name="search"></ion-icon>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- card-search ends -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- second-column -->
+                            <!-- <div class="col-lg-8 col-12">
+
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sint sequi eligendi explicabo aliquid iste.
+
+
+
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- card slider -->
+     <div id="destiny">
+     <div class="card-slider-container">
+     <section id="slider" class="pt-5">
+        <div class="container-fluid mt-2">
+          <div class="text-center my-5">
+            <h3 class=" display-6 ">WONDERFUL <span style="color: white ">DESTINIES</span></h3>
+        </div>
+            <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="/images/img-japan.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center">JAPAN</h5>
+                        <!-- <p class="text-center p-4">best place to visit</p> -->
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="/images/img-london.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center">LONDON</h5>
+                        <!-- <p class="text-center p-4"></p> -->
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="/images/img-rome.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center">ROME</h5>
+                        <!-- <p class="text-center p-4"></p> -->
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="/images/img-newyork.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center">NEWYORK</h5>
+                        <!-- <p class="text-center p-4"></p> -->
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="/images/img-dubai.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center">DUBAI</h5>
+                        <!-- <p class="text-center p-4"></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- home-container ends -->
+
+    <!-- <div class="container">
+    <div class="row row-cols-2">
+      <div class="col bg-danger">Column</div>
+      <div class="col bg-primary">Column</div>
+      <div class="col bg-warning">Column</div>
+      <div class="col bg-success">Column</div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+<div class="visit-card">
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+        <h3 class="display-6 ">Our <span style="color: white">PACKAGES</span></h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 h-100">
+      <!-- card start -->
+      <div class="col mb-5">
+        <div
+          class="card h-100"
+          style="box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.123)"
+        >
+          <img
+            class="card-img" src="/images/img-1.jpg" alt="Card image cap"/>
+          <div class="card-body">
+            <div class="visit-card-title pb-2">
+              <h5 style="color: rgb(204, 0, 0)">
+                <span class="logo">
+                    <ion-icon name="pin"></ion-icon>
+                </span>
+                <span class="logo-title">TRIPME</span>
+            </h5>
+            </div>
+            <p class="card-text" style="font-size: 12px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus odio,
+            </p>
+            <div class="stars"><span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+            </div>
+            <h6 class="price">$50.00 <strike>$130.00</strike></h6>
+            <a href="#" class="btn btn-dark mt-1">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- card ends --><!-- card start -->
+      <div class="col mb-5">
+        <div
+          class="card h-100"
+          style="box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.123)"
+        >
+          <img
+            class="card-img" src="/images/image-1.jpg"  alt="Card image cap"/>
+          <div class="card-body">
+            <div class="visit-card-title pb-2">
+              <h5 style="color: rgb(204, 0, 0)">
+                <span class="logo">
+                    <ion-icon name="pin"></ion-icon>
+                </span>
+                <span class="logo-title">TRIPME</span>
+            </h5>
+            </div>
+            <p class="card-text" style="font-size: 12px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus odio,
+            </p>
+            <div class="stars"><span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+                <span><ion-icon name="star-outline"></ion-icon></span>
+            </div>
+            <h6 class="price">$50.00 <strike>$130.00</strike></h6>
+            <a href="#" class="btn btn-dark mt-1">Book Now</a>
+          </div>
+        </div>
+      </div>
+          <!-- card ends --><!-- card start -->
+          <div class="col mb-5">
+            <div
+              class="card h-100"
+              style="box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.123)"
+            >
+              <img
+                class="card-img" src="/images/img-2.jpg"  alt="Card image cap"/>
+              <div class="card-body">
+                <div class="visit-card-title pb-2">
+                  <h5 style="color: rgb(204, 0, 0)">
+                    <span class="logo">
+                        <ion-icon name="pin"></ion-icon>
+                    </span>
+                    <span class="logo-title">TRIPME</span>
+                </h5>
+                </div>
+                <p class="card-text" style="font-size: 12px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus odio,
+                </p>
+                <div class="stars"><span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                </div>
+                <h6 class="price">$50.00 <strike>$130.00</strike></h6>
+                <a href="#" class="btn btn-dark mt-1">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- card ends --><!-- card start -->
+          <div class="col mb-5">
+            <div
+              class="card h-100"
+              style="box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.123)"
+            >
+              <img
+                class="card-img" src="/images/img-3.jpg"  alt="Card image cap"/>
+              <div class="card-body">
+                <div class="visit-card-title pb-2">
+                  <h5 style="color: rgb(204, 0, 0)">
+                    <span class="logo">
+                        <ion-icon name="pin"></ion-icon>
+                    </span>
+                    <span class="logo-title">TRIPME</span>
+                </h5>
+                </div>
+                <p class="card-text" style="font-size: 12px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus odio,
+                </p>
+                <div class="stars"><span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                </div>
+                <h6 class="price">$50.00 <strike>$130.00</strike></h6>
+                <a href="#" class="btn btn-dark mt-1">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- card ends -->
+          <!-- card start -->
+          <div class="col mb-5">
+            <div
+              class="card h-100"
+              style="box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.123)"
+            >
+              <img
+                class="card-img" src="/images/img-4.jpg"  alt="Card image cap"/>
+              <div class="card-body">
+                <div class="visit-card-title pb-2">
+                  <h5 style="color: rgb(204, 0, 0)">
+                    <span class="logo">
+                        <ion-icon name="pin"></ion-icon>
+                    </span>
+                    <span class="logo-title">TRIPME</span>
+                </h5>
+                </div>
+                <p class="card-text" style="font-size: 12px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus odio,
+                </p>
+                <div class="stars"><span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                </div>
+                <h6 class="price">$50.00 <strike>$130.00</strike></h6>
+                <a href="#" class="btn btn-dark mt-1">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- card ends -->
+          <!-- card start -->
+          <div class="col mb-5">
+            <div
+              class="card h-100"
+              style="box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.123)"
+            >
+              <img
+                class="card-img" src="/images/img-6.jpg"  alt="Card image cap"/>
+              <div class="card-body">
+                <div class="visit-card-title pb-2">
+                  <h5 style="color: rgb(204, 0, 0)">
+                    <span class="logo">
+                        <ion-icon name="pin"></ion-icon>
+                    </span>
+                    <span class="logo-title">TRIPME</span>
+                </h5>
+                </div>
+                <p class="card-text" style="font-size: 12px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus odio,
+                </p>
+                <div class="stars"><span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                    <span><ion-icon name="star-outline"></ion-icon></span>
+                </div>
+                <h6 class="price">$50.00 <strike>$130.00</strike></h6>
+                <a href="#" class="btn btn-dark mt-1">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- card ends -->
+      </div>
+</div>
+</div>
+
+
+<!-- 
+
+<div class="card-1">
+    <figure class="hover-card">
+        <div class="image"><img src="/images/slide-img-5.jpg" alt="pr-sample23" /></div>
+        <figcaption>
+          <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+          <h3>The World Ended Yesterday</h3>
+          <p>
+      
+            You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
+          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<svg height="30px" fill="currentColor" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 458.571 458.571" style="enable-background:new 0 0 458.571 458.571;"
+xml:space="preserve"> -->
+
+
+
+<div class="container my-2">
+  <section id="services">
+      <div class="text-center">
+          <!-- <span>SERVICES</span> -->
+          <h3 class=" display-5 ">Our <span style="color: white">Services</span></h3>
+      </div>
+      <div class="row">
+          <div class="col-md-4 my-2">
+              <div class="px-3 my-5">
+                  <div class="circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
+                       style="width: 70px;height: 70px;  background: #ee0979;
+                       background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+                       background: linear-gradient(to right, #ff6a00, #ee0979);"
+                       >
+                       <i class="fas fa-hotel fa-2x"></i>
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                      <h5 class="text-uppercase" style="font-weight: 600; color: blanchedalmond;">Affordable hotels</h5>
+                      <p class="font-weight-light my-3"  style="font-size: 15px;">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+                          deleniti et fugit iusto nesciunt.</p>
+                  </div>
+              </div>
+          </div>
+        <div class="col-md-4 my-2">
+              <div class="px-3 my-5">
+                  <div class="circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
+                       style="width: 70px;height: 70px;  background: #ee0979;
+                       background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+                       background: linear-gradient(to right, #ff6a00, #ee0979);">
+                       <i class="fas fa-utensils fa-2x"></i>
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                      <h5 class="text-uppercase" style="font-weight: 600; color: blanchedalmond;">Food & Drinks</h5>
+                      <p class="font-weight-light my-3" style="font-size: 15px;">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+                          deleniti et fugit iusto nesciunt.</p>
+                  </div>
+              </div>
+          </div>
+        <div class="col-md-4 my-2">
+              <div class="px-3 my-5">
+                  <div class="circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
+                       style="width: 70px;height: 70px;  background: #ee0979;
+                       background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+                       background: linear-gradient(to right, #ff6a00, #ee0979);">
+                       <i class="fas fa-plane fa-2x"></i>
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                      <h5 class="text-uppercase" style="font-weight: 600; color: blanchedalmond; ">Fastest Travel</h5>
+                      <p class="font-weight-light my-3"  style="font-size: 15px;">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+                          deleniti et fugit iusto nesciunt.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TESTIMONIALS -->
+<h3 class="text-center mt-5 pt-5 text-white"><b>TESTEMONIALS</b></h3>
+<section class="testimonials">
+	<div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto.</p>
+              </div>
+              <div class="testimonial-name">EMILIANO AQUILANI</div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto.</p>
+              </div>
+              <div class="testimonial-name">ANNA ITURBE</div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto.</p>
+              </div>
+              <div class="testimonial-name">LARA ATKINSON</div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto.</p>
+              </div>
+              <div class="testimonial-name">IAN OWEN</div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto.</p>
+              </div>
+              <div class="testimonial-name">MICHAEL TEDDY</div>
+            </div>
+            <!--END OF TESTIMONIAL 5 -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>TRIPME</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="games.html">My Bookings</a></li>
+                        <!-- <li><a href="services.html"></a></li> -->
+                        <!-- <li><a href="products.html"></a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">TrainS</a></li>
+                        <li><a href="#">Cabs</a></li>
+                        <li><a href="#">Home Stay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>OTHERS</h4>
+                    <ul>
+                        <li><a href="#">Destiny</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <div class="contact-details">
+                        <ul>
+                            <li><a href="#">Address</a></li>
+                            <li><a href="#">0123456</a></li>
+                            <!-- <li><a href="#"><i class="far fa-envelope"></i> gamify@gmail.com</a></li>  -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>FOLLOW</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div </div> </div> </footer> <!-- footer-bottom -->
+                <div class="bottom-footer">
+                    <div class="bottom-text">
+                        <p><a href="index.html">
+                                <ion-icon name="pin"></ion-icon> MYTRIP |
+                             &COPY; 2021 | All Right Reserved</a></p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- preloader -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+
+<!-- slider card -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous">
+                </script>
+
+                <!--ion icon -->
+                <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+                <script src="home.js"></script>
+                <!--script-link----------->
+                <!-- <script type="text/javascript" src="js/script.js"></script> -->
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/script.js"></script>
+</body>
+
+</html>
